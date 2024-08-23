@@ -1,10 +1,9 @@
 
-import style from './styles.module.scss'
+import Container from './Container';
+import ContextProvider from './context/ContextProvider';
 function MainComponent () {
-    return <div className={style['wrapper']}>
-        <h6>
-            Main Component
-        </h6>
-    </div>
+    return<ContextProvider>
+            <Container />
+    </ContextProvider>
 }
 export default MainComponent;
