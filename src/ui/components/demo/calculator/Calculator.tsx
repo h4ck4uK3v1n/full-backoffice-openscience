@@ -1,3 +1,4 @@
+import Display from './atoms/display';
 import styles from './styles.module.scss'
 import React, { useState } from 'react';
 function Calculator() {
@@ -20,9 +21,7 @@ function Calculator() {
            <h2>
                 Calculator
            </h2>
-           <div role="display"> 
-                {display}
-           </div>
+           <Display display={display} variant="primary" />
            {numbers.map((rows) => {
                 return (
                      <div role="row" key={rows.join('')}>
