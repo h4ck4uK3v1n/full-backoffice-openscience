@@ -22,15 +22,15 @@ export const Primary: Story = {
   },
 };
 export const Secondary: Story = {
-    args: {
-      display: '123',
-      variant: 'secondary',
-    },
-  };
-  
+  args: {
+    display: '123',
+    variant: 'secondary',
+  },
+};
+
 export const Tertiary: Story = {
-    args: {
-      display: '123',
-      variant: 'tertiary',
-    },
-  };
+  args: {
+    display: '123',
+    variant: 'tertiary',
+  },
+};

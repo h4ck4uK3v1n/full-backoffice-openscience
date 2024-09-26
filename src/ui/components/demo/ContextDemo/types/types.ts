@@ -1,18 +1,20 @@
+import React from 'react';
+
 export interface ChildComponentProps {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }
 export interface StateType {
-    backGroundColor: string;
-    color: string;
-    test: string;
+  backGroundColor: string;
+  color: string;
+  test: string;
 }
 
 export interface ReducerType {
-    type: string;
-    payload: string;
+  type: string;
+  payload: string;
 }
 
 export interface StateDataType {
-    state: StateType;
-    dispatch: React.Dispatch<ReducerType>;
+  state: StateType;
+  dispatch: React.Dispatch<ReducerType>;
 }
