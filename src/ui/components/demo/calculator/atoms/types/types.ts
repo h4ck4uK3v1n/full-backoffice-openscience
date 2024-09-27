@@ -1,4 +1,4 @@
 export interface DisplayProps {
-    display: string;
-    variant: 'primary' | 'secondary' | 'tertiary';
+  display: string;
+  variant: 'primary' | 'secondary' | 'tertiary';
 }

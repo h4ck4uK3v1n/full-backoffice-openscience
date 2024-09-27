@@ -1,3 +1,3 @@
 export interface ChildComponentProps {
-    time: string;
+  time: string;
 }
