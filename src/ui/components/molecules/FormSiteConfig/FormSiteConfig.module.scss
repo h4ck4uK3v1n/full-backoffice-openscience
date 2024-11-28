@@ -1,0 +1,78 @@
+@import '../../../../globals/ads-variables.scss';
+
+.form__site_config {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    row-gap: 1.5rem;
+    // width: 100%;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    row-gap: 1.5rem;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    >input {
+        width: 90%;
+    }
+}
+
+.form__label {
+    color: $--ads-colors-black;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form__submit {
+    align-items: center;
+    display: flex;
+    grid-column: span 2;
+    margin-left: 37%;
+    margin-top: 20px;
+}
+
+.form__editing {
+    display: flex;
+    margin-top: 1rem;
+    gap: 2rem;
+
+    > :nth-child(1) {
+        width: 60%;
+        background-color: $--ads-colors-gray-20;
+        margin: 0;
+
+        >ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            >li {
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+
+    > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        >button {
+            width: 100%;
+        }
+
+        width: 40%;
+        margin: 0;
+    }
+}
