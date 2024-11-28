@@ -7,7 +7,7 @@ import styles from './FormSiteConfig.module.scss';
 
 function FormSiteConfig({ data, onChange }: IProps): JSX.Element {
   return (
-    <form className={styles.form__site_config}>
+    <form className={styles.form__site}>
       <div className={styles.form__group}>
         <div className={styles.form__field}>
           <span className={styles.form__label}>Site Title</span>
