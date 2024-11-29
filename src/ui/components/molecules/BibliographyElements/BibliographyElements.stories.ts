@@ -10,4 +10,9 @@ export default meta;
 
 type Story = StoryObj<typeof BibliographyElements>;
 
-export const Default: Story = {};
+export const Default: Story = {
+  args: {
+    filterFound: 10,
+    setFilter: () => {},
+  },
+};
