@@ -3,9 +3,9 @@ import type { IProps } from './types/IProps';
 import { Icon } from '../../utils/svg-icons/icons';
 
 function ChevronButton(props: IProps) {
-  const { icon, onClick, name } = props;
+  const { icon, onClick } = props;
   return (
-    <button name={name} className={`${styles['button-chevron']}`} onClick={onClick}>
+    <button className={`${styles['button-chevron']}`} onClick={onClick}>
       {icon && (
         <Icon data-testid="icon-chevron" src={icon} className={`${styles['icon-chevron']}`} />
       )}

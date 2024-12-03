@@ -18,9 +18,9 @@ function BibliographyActions({ items, onCheck, onNext, onPrevious, page }: IProp
         <p>Entries per page</p>
       </div>
       <div className={styles.container}>
-        <ChevronButton name="Previous" onClick={onPrevious} icon={left} variant="Left" />
+        <ChevronButton onClick={onPrevious} icon={left} variant="Left" />
         <p className={styles.setbg}>{page}</p>
-        <ChevronButton name="Next" onClick={onNext} icon={right} variant="Right" />
+        <ChevronButton onClick={onNext} icon={right} variant="Right" />
       </div>
     </div>
   );
