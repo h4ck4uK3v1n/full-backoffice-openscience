@@ -1,7 +1,7 @@
 // Toggle.stories.tsx
 import React, { useState } from 'react';
+import type { Meta, StoryFn } from '@storybook/react';
 import Toggle from './Toggle';
-import type { Meta, StoryFn  } from '@storybook/react';
 
 export default {
   title: 'Components/Toggle',
@@ -29,18 +29,18 @@ const Template: StoryFn<ToggleStoryProps> = (args) => {
 };
 export const Enabled = Template.bind({});
 Enabled.args = {
-  headerText: 'Toggle lavel', 
-  labelOn: 'On',      
-  labelOff: 'Off',    
-  isOn: true,        
-  disabled: false,   
+  headerText: 'Toggle lavel',
+  labelOn: 'On',
+  labelOff: 'Off',
+  isOn: true,
+  disabled: false,
 };
 export const Hover = Template.bind({});
 Hover.args = {
   headerText: 'Toggle lavel',
   labelOn: 'On',
   labelOff: 'Off',
-  isOn: true, 
+  isOn: true,
   disabled: false,
 };
 

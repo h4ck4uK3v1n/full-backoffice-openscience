@@ -6,7 +6,7 @@ export default {
   component: Toggle,
 };
 
-const Template = (args) => {
+function Template(args) {
   const [isOn, setIsOn] = useState(args.isOn);
 
   const handleToggle = () => {
@@ -16,26 +16,23 @@ const Template = (args) => {
   };
 
   return <Toggle {...args} isOn={isOn} onToggle={handleToggle} />;
-};
-
+}
 
 export const Enabled = Template.bind({});
 Enabled.args = {
-  headerText: 'Toggle lavel', 
-  labelOn: 'On',      
-  labelOff: 'Off',    
-  isOn: true,        
-  disabled: false,   
+  headerText: 'Toggle lavel',
+  labelOn: 'On',
+  labelOff: 'Off',
+  isOn: true,
+  disabled: false,
 };
-
-
 
 export const Hover = Template.bind({});
 Hover.args = {
   headerText: 'Toggle lavel',
   labelOn: 'On',
   labelOff: 'Off',
-  isOn: true, 
+  isOn: true,
   disabled: false,
 };
 export const Hover = Template.bind({});
@@ -43,7 +40,7 @@ Hover.args = {
   headerText: 'Toggle lavel',
   labelOn: 'On',
   labelOff: 'Off',
-  isOn: true, 
+  isOn: true,
   disabled: false,
 };
 
