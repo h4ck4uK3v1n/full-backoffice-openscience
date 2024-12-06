@@ -1,31 +1,31 @@
 .toggle-wrapper {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   margin-bottom: var(--toggle-margin-bottom); 
 }
 
 .toggle-header {
+  color: var(--toggle-text-color);
   font-size: var(--toggle-header-font-size); 
-  margin-bottom: 5px;
-  color: var(--toggle-text-color); 
+  margin-bottom: 5px; 
 }
 
 .toggle-container {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .toggle-checkbox {
   appearance: none;
-  width: 40px;
-  height: 20px;
   background-color: var(--ads-colors-gray-30); 
   border-radius: 20px;
-  position: relative;
   cursor: pointer;
+  height: 20px;
   outline: none;
+  position: relative;
   transition: background-color 0.3s;
+  width: 40px;
 }
 
 .toggle-checkbox:checked {
@@ -37,15 +37,15 @@
 }
 
 .toggle-checkbox::before {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 16px;
-  height: 16px;
   background-color: var(--ads-colors-white); 
   border-radius: 50%;
+  content: '';
+  height: 16px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
   transition: left 0.3s;
+  width: 16px;
 }
 
 .toggle-checkbox:hover {
